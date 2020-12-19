@@ -12,9 +12,19 @@ form.addEventListener("keyup", function(event) {
 });
 
 function stepSetSinhVien() {
-    var DN = $.trim($("select[name='txtDoanhNghiep']").val());
+    var DN = $.trim($("select[name='txtMonThi']").val());
     if (DN == '') {
-        alert("VUI LÒNG CHỌN DOANH NGHIỆP");
+        alert("VUI LÒNG CHỌN MÔN THI");
+        return false;
+    }
+    var DN = $.trim($("select[name='txtDonVi']").val());
+    if (DN == '') {
+        alert("VUI LÒNG CHỌN ĐƠN VỊ");
+        return false;
+    }
+    var DN = $.trim($("input[name='txtKhoa']").val());
+    if (DN == '') {
+        alert("VUI LÒNG NHẬP TÊN KHOA VIỆN");
         return false;
     }
     var masv = $.trim($("input[name='txtHoTen']").val());
@@ -24,20 +34,14 @@ function stepSetSinhVien() {
     }
     var hoten = $.trim($("input[name='txtMaSV']").val());
     if (hoten == '') {
-        alert("VUI LÒNG NHẬP MÃ SINH VIÊN");
+        alert("VUI LÒNG NHẬP MÃ SỐ SINH VIÊN");
         return false;
     }
     var email = $.trim($("input[name='txtEmail']").val());
     if (email == '') {
         alert("VUI LÒNG NHẬP EMAIL");
         return false;
-    } else {
-        var n = email.includes("uef.edu.vn");
-        if (n != true) {
-            alert("VUI LÒNG NHẬP EMAIL UEF THEO ĐỊNH DẠNG XXX@UEF.EDU.VN");
-            return false;
-        }
-    }
+    } 
     var phone = $.trim($("input[name='txtPhone']").val());
     if (phone == '') {
         alert("VUI LÒNG NHẬP SỐ ĐIỆN THOẠI");
@@ -76,7 +80,7 @@ function doComplete() {
 }
 
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbw_XGQmbp8hRLvLWcdqO3il7xY8gPuGftavBU7YGX_exc8TzPo/exec';
+const scriptURL = 'https://script.google.com/macros/s/AKfycbylI7MwshsyE86LsZVOv1KGpDsoTszkKHfJG-9egfgxu1_IIXpXjduf/exec';
 
 const loading = document.querySelector('.js-loading');
 const successMessage = document.querySelector('.js-success-message');

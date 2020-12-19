@@ -2,11 +2,11 @@
 <html>
 
 <head>
-    <title>THAM QUAN DOANH NGHIỆP NĂM HỌC 2020 - 2021 - FIT UEF</title>
+    <title>ĐĂNG KÝ CUỘC THI VÔ ĐỊCH TIN HỌC VĂN PHÒNG MOS UEF – LẦN 2 NĂM HỌC 2020 - 2021</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <meta name="keywords" content="tham quan doanh nghiep, fituef, fit uef, công nghệ thông tin" />
-    <meta name="description" content="Theo chủ trương của Nhà trường nhằm tạo điều kiện cho sinh viên được tiếp xúc với các doanh nghiệp đồng thời trang bị cho sinh viên những kiến thức hữu ích và tăng cường kỹ năng thực tế về các môn học chuyên ngành tại Khoa." />
+    <meta name="description" content="Khoa CNTT và Phòng CTSV Trường Đại học KINH TẾ TẾ TÀI CHÍNH TP.HCM - UEF phối hợp tổ chức cuộc thi Vô địch Tin học Văn phòng UEF – Lần 2 với sự bảo trợ của IIG VIỆT NAM" />
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <meta charset="utf-8">
     <style>
@@ -184,57 +184,71 @@
 </head>
 
 <body>
-    <div id="container">
-        <div id="main-content">
-            <img src="images/bg.jpg" style="max-width: 100% !important;" />
-            <h2 style="text-align:center; color: red; font-weight: bold; margin-bottom: 5px;margin-top: 20px;">ĐĂNG KÝ THAM GIA CHƯƠNG TRÌNH</h2>
-            <a style="text-align:center; color: #18a7ef; font-weight: bold; font-style: italic;margin-left: 0px !important;margin-bottom: 20px;">HẠN CHÓT ĐĂNG KÝ 30/11/2020</a>
-            <a style="text-align:center; color: #0a8075; font-weight: bold; font-style: italic;margin-left: 0px !important;margin-bottom: 20px;">23/12/2020 - TMA Solutions: 60 SINH VIÊN</a>
-            <a style="text-align:center; color: #F18260; font-weight: bold; font-style: italic;margin-left: 0px !important;margin-bottom: 20px;">23/12/2020 - Global CyberSoft: ĐÃ ĐỦ</a>
-            <a style="text-align:center; color: #0a8075; font-weight: bold; font-style: italic;margin-left: 0px !important;margin-bottom: 20px;">25/12/2020 - FPT Information System: ĐÃ ĐỦ</a>
+    <div id="container" style="padding:0px !important">
+        <div id="main-content" style="padding:0px !important">
+            <img src="images/bg.jpg" style="max-width: 100% !important; width:150% !important" />
+            <h2 style="text-align:center; color: red; font-weight: bold; margin-bottom: 20px;margin-top: 20px; font-size:24px">ĐĂNG KÝ CUỘC THI <br /> VÔ ĐỊCH TIN HỌC VĂN PHÒNG MOS UEF – LẦN 2</h2>
             <form name="submit-to-google-sheet" class="js-showupdate">
                 <div class="form-wrapper">
-                    <label for="txtLop">CHỌN DOANH NGHIỆP</label>
-                    <select class="form-control" required name="txtDoanhNghiep">
-                        <option value="">Chọn doanh nghiệp</option>
-                        <option value="TMA Solutions">TMA Solutions - 23/12/2020</option> 
+                    <label for="txtMonThi">CHỌN MÔN THI</label>
+                    <select class="form-control" required name="txtMonThi">
+                        <option value="">Chọn môn thi</option>
+                        <option value="Microsoft Word 2016">Microsoft Word 2016</option>
+                        <option value="Microsoft Excel 2016">Microsoft Excel 2016</option>
+                        <option value="Microsoft Powerpoint 2016">Microsoft Powerpoint 2016</option>
                     </select>
                 </div>
                 <div class="form-wrapper">
+                    <label for="txtDonVi">ĐƠN VỊ</label>
+                    <select class="form-control" required name="txtDonVi">
+                        <option value="">Chọn đơn vị</option>
+                        <option value="UEF">ĐẠI HỌC KINH TẾ TÀI CHÍNH TP.HCM - UEF</option>
+                        <option value="HUTECH">ĐẠI HỌC CÔNG NGHỆ TP.HCM - HUTECH</option>
+                    </select>
+                </div>
+                <div class="form-wrapper">
+                    <label for="txtKhoa">KHOA/VIỆN</label>
+                    <input id="inKhoa" type="text" name="txtKhoa" placeholder="Nhập tên Khoa/Viện đầy đủ" class="form-control" required>
+                </div>
+                <div class="form-wrapper">
+                    <label for="txtLop">LỚP</label>
+                    <input id="inHoTen" type="text" name="txtLop" placeholder="Nhập tên lớp" class="form-control" required>
+                </div>
+                <div class="form-wrapper">
                     <label for="txtHoTen">HỌ VÀ TÊN</label>
-                    <input id="inHoTen" type="text" name="txtHoTen" placeholder="Họ và tên sinh viên" class="form-control" required>
+                    <input id="inHoTen" type="text" name="txtHoTen" placeholder="Họ và tên thí sinh" class="form-control" required>
+                </div>
+                <div class="form-wrapper">
+                    <label for="txtHoTen">NGÀY SINH</label>
+                    <input id="inNgaySinh" type="date" min="1999-01-01" max="2007-12-31" name="txtNgaySinh" class="form-control" required>
                 </div>
                 <div class="form-wrapper">
                     <label for="txtMaSV">MÃ SỐ SINH VIÊN</label>
                     <input id="inMaSV" type="text" name="txtMaSV" placeholder="Mã số sinh viên" class="form-control" required>
                 </div>
                 <div class="form-wrapper">
-                    <label for="txtEmail">EMAIL (<span style="color: #FFC107;">xxx</span><span style="color: #167ec2;">@</span><span style="color: red;">uef.edu.vn</span>)</label>
-                    <input id="inEmail" type="email" name="txtEmail" placeholder="Email sinh viên (uef)" class="form-control" required>
+                    <label for="txtEmail">EMAIL</label>
+                    <input id="inEmail" type="email" name="txtEmail" placeholder="Email sinh viên" class="form-control" required>
                 </div>
                 <div class="form-wrapper">
                     <label for="txtPhone">SỐ ĐIỆN THOẠI</label>
                     <input id="inPhone" type="text" maxlength="10" name="txtPhone" placeholder="Số điện thoại sinh viên" class="form-control" required>
                 </div>
-                <div class="form-wrapper">
-                    <label for="txtLop">LỚP</label>
-                    <input id="inLop" type="text" maxlength="12" name="txtLop" placeholder="Lớp" class="form-control" required>
-                </div>
                 <button id="btnDoSV" onclick="return stepSetSinhVien();" type="submit">ĐĂNG KÝ</button>
             </form>
-            <h4 style="text-align:center; color: red; font-weight: bold; margin-bottom: 5px;margin-top: 20px;">Lưu ý: Sinh viên đăng ký tham quan. Đóng tiền cho lớp trưởng. Lớp trưởng thu tiền và nộp về thư ký Khoa hạn chót 03/12/2020. Lệ phí: 50.000 VNĐ/Chuyến. Trong trường hợp sinh viên đăng ký mà không thể tham gia. Vui lòng thông báo lại lớp trưởng trước ngày 03/12/2020.Trường hợp đăng ký mà không tham quan sẽ bị trừ điểm rèn luyện theo quy định</h4>
-            <H1 class="js-success-message is-hidden" style="color:seagreen;margin-top: 30px; text-align: center;">ĐĂNG KÝ THÀNH CÔNG</H1>
-            <p class="js-error-message is-hidden" style="color:seagreen;margin-top: 30px;text-align: center;">ĐĂNG KÝ THÀNH CÔNG</p>
+            <h4 style="text-align:center; color: red; font-weight: bold; margin-bottom: 5px;margin-top: 20px;">Lưu ý: Mỗi sinh viên chỉ đăng ký duy nhất 1 môn thi. Trường hợp sinh viên đăng ký nhiều môn thi. BTC sẽ mặc định chọn môn thi đăng ký gần nhất.</h4>
+            <H1 class="js-success-message is-hidden" style="color:orangered;margin-bottom:25px;margin-top: 30px; text-align: center;">ĐĂNG KÝ THẤT BẠI</H1>
+            <p class="js-error-message is-hidden" style="color:seagreen;margin-top: 30px;margin-bottom:25px;text-align: center;">ĐĂNG KÝ THÀNH CÔNG</p>
             <div class="loading js-loading is-hidden" id="loadingOK" style="background-color: #00000054; height: 163%;">
                 <div class="loading-spinner">
-                    <svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/></svg>
+                    <svg><circle cx="25" cy="25" r="20" fill="none" stroke-width="2" stroke-miterlimit="10" /></svg>
                 </div>
             </div>
+            <h1><a href="https://rb.gy/xeofif" style="color:#167ec2; font-size:20px; margin:15px 0px 30px 0px; line-height:45px"><strong>XEM TÀI LIỆU HƯỚNG DẪN ÔN TẬP</strong></a></h1>
         </div>
         <script type="text/javascript" src="js/do_get_info.js">
-        </script>
-
-        <p style="text-align:center">&copy; 2020 TEAM DEV OF FITUEF - HIEUHV@UEF.EDU.VN</p>
+        </script> 
+        <p style="text-align:center">&copy; 2020 TEAM DEV OF FITUEF - MOS UEF 2020</p>
         <p>
         </p>
     </div>
